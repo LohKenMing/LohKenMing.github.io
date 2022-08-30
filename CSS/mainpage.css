@@ -10,6 +10,7 @@ h1{
     background-color: #d2691e;
     margin-top: 0px;
     width: 100%;
+    margin-left: 0px;
 }
 img {
     border-radius:80%;
@@ -17,7 +18,12 @@ img {
 }
 
 p{
-    float: right;
+    
     margin: 0px;
     padding: 0%;
+}
+
+input[type="text"]{
+    background-color: black;
+    color: white;
 }
