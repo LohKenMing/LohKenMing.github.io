@@ -29,3 +29,8 @@ input[type="text"]{
     border-radius: 10%;
     border: solid pink 1px
 }
+
+table,td,tr{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
