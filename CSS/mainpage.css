@@ -6,20 +6,43 @@ body{
 
 }
 
-h1{
-    background-color: #d2691e;
+.box h1{
+    background-color: #9e5622;
+    color: white;
     margin-top: 0px;
-    width: 100%;
+    width: 500px;
+    
+    margin:auto;
     margin-left: 0px;
+    margin-top: 10px;
+    padding: 20px;
+    
 }
-img {
+
+/* .box h1::after{
+    content: "Welcome to the page";
+    position:relative;
+    font-size: 20px;
+    
+
+} */
+.box img{
     border-radius:80%;
-    aspect-ratio: auto;
+    float:right;
+   
+    
+}
+.box{
+    display: flex;
+}
+
+.video{
+    text-align: center;
 }
 
 p{
     
-    margin: 0px;
+    margin-top: 10px;
     padding: 0%;
 }
 
@@ -33,4 +56,33 @@ input[type="text"]{
 table,td,tr{
     border: 1px solid black;
     border-collapse: collapse;
+    text-align: center;
 }
+
+.information{
+    display: flex;
+    margin-top: 30px;
+}
+
+.information table{
+    float:left;
+    margin-right: 30px;
+    width: 60%;
+}
+
+
+.text p{
+    background-color: blanchedalmond;
+    width: 90%;
+    padding:30px;
+    text-align: center;
+    color: grey;
+    background: linear-gradient(to right, blanchedalmond 0%, blanchedalmond 33%,rgb(250, 193, 108) 33%, rgb(250, 193, 108) 66%,rgb(87, 54, 4) 66%, rgb(87, 54, 4) 100%);
+   
+}
+
+tr:nth-child(odd){
+    background-color: blanchedalmond
+}
+
+
