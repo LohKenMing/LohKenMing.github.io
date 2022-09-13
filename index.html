@@ -1,72 +1,301 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="CSS/mainpage.css">
-</head>
-<body>
-<div class="box">
-  <h1>Welcome to Ken Ming's Page</h1>
-<img src= "Untitled.png" height="100px">
-</div>
-<div class="video">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/3FM1waTeTDE?autoplay=1&mute=1&loop=1" title="YouTube video player" 
-  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-  allowfullscreen></iframe>
-</div>
-<div class="information">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="CSS/mainpage.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 
-<table>
-  <tr>
-    <th colspan = "2">Information</th>
-  </tr>
-  <tr>
-    <td>Name</td>
-    <td>Ken Ming</td>
-  </tr>
-  <tr>
-    <td>School</td>
-    <td>Singapore Management University</td>
-  </tr>
-  <tr>
-    <td rowspan="3">Top 3 Favourite Food</td>
-    <td>Chicken Rice</td>
-  </tr>
-  <tr>
-    <td>Laksa</td>
-  </tr>
-  <tr>
-    <td>Dim Sum</td>
-  </tr>
-</table>
-<div class="text">
-  <h2>Biography</h2>
-  <p>Hi I'm Ken Ming. I love to cook! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, adipisci placeat! Debitis aperiam incidunt quos in non nesciunt molestias sint, magni atque ullam saepe earum, doloribus, deserunt dolor cumque ipsum.</p>
-</div>
+    
+  </head>
+  <body style="background-color: rgb(230, 252, 252);">
+    <div class="container-fluid text-white text-center bg-secondary p-4">
+      <h1>Hello, Welcome to Ken Ming's Page</h1>
+    </div>
 
-</div>
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="hobbies.html">Hobbies</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="projects.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-<br>
-<form>
-  Name:<input type = "text" name="name" placeholder = "name">
-  <br>
-  Relationship Status:
-  <input type="radio" name="relationship" value="Single">Single
-  <input type="radio" name="relationship" value="Married">Married
-  <br>
-  Favourite fruits:
-  <br>
-  <input type="checkbox" name = "fruits[]" value="grape">Grape
-  <br>
-  <input type="checkbox" name = "fruits[]" value="apple">Apple
-  <br>
-  <input type="checkbox" name = "fruits[]" value="orange">Orange
-  <br>
-  <input type="submit" name = "submit" value="Submit">
-</form>
-</body>
+    <div class="container">
+      <div class="row w-50 position-relative top-50 start-50 translate-middle-x mt-5">
+        <h3 class="text-center">To properly welcome you, here are some cute dogs</h3>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="01g51tke1zr51hft6762.jpeg" class="d-block w-100 img-fluid" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="corgi-top-1400x871.jpeg" class="d-block w-100 img-fluid" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="GR_05.jpeg" class="d-block w-100 img-fluid" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- About -->
+      <div class="row mt-5">
+        <h2>About me</h2>
+      </div>
+      <div class="row d-inline-flex p-2">
+        <div class="col-md-4">
+          <img src="Untitled.png" alt="" >
+        </div>
+        <div class="col-md-8 bg-info mt-3">
+          <p class="p-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat qui, incidunt numquam sunt quidem earum asperiores repellendus repudiandae at dignissimos. Iure, facere labore consequatur eligendi esse dolorum natus asperiores doloribus!Loremlorem Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia voluptatibus molestiae recusandae delectus est totam veniam nesciunt beatae! Odit itaque maiores alias provident fuga eum magnam aspernatur necessitatibus aut totam.</p>
+        </div>
+       
+      </div>
+
+      <div class="row mt-3">
+        <h2>Courses I am taking this semester</h2>
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                Web Application Development II
+              </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                Computational Thinking
+              </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                Business Process Analysis and Solutioning
+              </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                Interactive Design Prototyping
+              </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="container">
+      <div class="row mt-3">
+        <h2>Find my timetable here!</h2>
+      </div>
+
+      <div class="row">
+        <table class="table table-dark">
+          <thead>
+            <td></td>
+            <td>Mon</td>
+            <td>Tues</td>
+            <td>Wed</td>
+            <td>Thu</td>
+            <td>Fri</td>
+            <td>Sat</td>
+            <td>Sun</td>
+          </thead>
+          <tbody>
+            <tr>
+              <td>0800</td>
+              <td class="bg-success" colspan="7"></td>
+              
+            </tr>
+            <tr>
+              <td>0900</td>
+              <td class="bg-success" colspan="7"></td>
+            </tr>
+            <tr>
+              <td>1000</td>
+              <td class="bg-success" colspan="7"></td>
+            </tr>
+            <tr>
+              <td>1100</td>
+              <td class="bg-success" colspan="7"></td>
+            </tr>
+            <tr>
+              <td>1200</td>
+              <td class="bg-success"></td>
+              <td class="bg-success"></td>
+              <td class="bg-danger" rowspan="4"></td>
+              <td class="bg-danger" rowspan="8"></td>
+              <td class="bg-success"></td>
+              <td class="bg-success"></td>
+              <td class="bg-success"></td>
+            </tr>
+            <tr>
+              <td>1300</td>
+              <td class="bg-success"></td>
+              <td class="bg-success"></td>
+              <td class="bg-success"></td>
+              <td class="bg-success"></td>
+              <td class="bg-success"></td>
+            </tr>
+            <tr>
+              <td>1400</td>
+              <td class="bg-success"></td>
+              <td class="bg-success"></td>
+              <td class="bg-success"></td>
+              <td class="bg-success"></td>
+              <td class="bg-success"></td>
+            </tr>
+            <tr>
+              <td>1500</td>
+              <td rowspan = 5 class="bg-danger"></td>
+              <td class="bg-success"></td>
+              <td class="bg-success"></td>
+              <td class="bg-success"></td>
+              <td class="bg-success"></td>
+            </tr>
+            <tr>
+              <td>1600</td>
+              <td class="bg-success"></td>
+              <td class="bg-success"></td>
+              <td class="bg-success"></td>
+              <td class="bg-success"></td>
+              <td class="bg-success"></td>
+            </tr>
+            <tr>
+              <td>1700</td>
+              <td class="bg-success"></td>
+              <td class="bg-success"></td>
+              <td class="bg-success"></td>
+              <td class="bg-success"></td>
+              <td class="bg-success"></td>
+            </tr>
+            <tr>
+              <td>1800</td>
+              <!-- <td class="bg-danger"></td> -->
+              <td class="bg-success"></td>
+              <td class="bg-success"></td>
+              <td class="bg-success"></td>
+              <td class="bg-success"></td>
+              <td class="bg-success"></td>
+            </tr>
+            <tr>
+              <td>1900</td>
+              <!-- <td class="bg-danger"></td> -->
+              <td class="bg-success"></td>
+              <td class="bg-success"></td>
+              <td class="bg-success"></td>
+              <td class="bg-success"></td>
+              <td class="bg-success"></td>
+            </tr>
+            <tr>
+              <td>2000</td>
+              <td class="table-active"></td>
+              <td class="table-active"></td>
+              <td class="table-active"></td>
+              <td class="table-active"></td>
+              <td class="table-active"></td>
+              <td class="table-active"></td>
+              <td class="table-active"></td>
+            </tr>
+            <tr>
+              <td>2100</td>
+              <td class="table-active"></td>
+              <td class="table-active"></td>
+              <td class="table-active"></td>
+              <td class="table-active"></td>
+              <td class="table-active"></td>
+              <td class="table-active"></td>
+              <td class="table-active"></td>
+            </tr>
+            <tr>
+              <td>2200</td>
+              <td class="table-active"></td>
+              <td class="table-active"></td>
+              <td class="table-active"></td>
+              <td class="table-active"></td>
+              <td class="table-active"></td>
+              <td class="table-active"></td>
+              <td class="table-active"></td>
+            </tr>
+            <tr>
+              <td>2300</td>
+              <td class="table-active"></td>
+              <td class="table-active"></td>
+              <td class="table-active"></td>
+              <td class="table-active"></td>
+              <td class="table-active"></td>
+              <td class="table-active"></td>
+              <td class="table-active"></td>
+            </tr>
+            <tr>
+              <td>2400</td>
+              <td class="table-active"></td>
+              <td class="table-active"></td>
+              <td class="table-active"></td>
+              <td class="table-active"></td>
+              <td class="table-active"></td>
+              <td class="table-active"></td>
+              <td class="table-active"></td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+  </body>
 </html>
 
