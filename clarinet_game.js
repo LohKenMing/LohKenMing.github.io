@@ -33,3 +33,8 @@ function generate_images(){
     document.getElementById("clarinet_game").innerHTML = string
 
 }
+
+
+function test(){
+    console.log("slay")
+}
