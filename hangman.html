@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <title>Document</title>
+    <script src="hangman.js"></script>
+</head>
+<body style="background-color: rgb(230, 252, 252);">
+    <div class="container-fluid text-white text-center bg-secondary p-4">
+      <h1>Welcome to Hangman</h1>
+    </div>
+
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="hobbies.html">Hobbies</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="projects.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container mt-3">
+        <div class="row">
+            <p class="display-6">Lets play hangman. You have 6 lives. Click on "Choose a Word" to randomly generate a word. Note that letters initially shown can still be part of the hidden words :)</p>
+        </div>
+        <div class="row">
+            <div class="input-group mb-3">
+                <input id = "thing" name = "" type="text" class="form-control" placeholder="" aria-label="Recipient's username" aria-describedby="button-addon2" disabled>
+                <button class="btn btn-outline-secondary" type="button" id="button-addon2" onclick="generate()">Choose a Word</button>
+              </div>
+            <p hidden id ="lives">6</p>
+        </div>
+        <table class="table-responsive">
+            <tr>
+                <td>
+                    <button type="button" class="btn btn-primary btn-sm" onclick="check('a')">A</button>
+                </td>
+                <td>
+                    <button type="button" class="btn btn-primary btn-sm" onclick="check('b')">B</button>
+                </td>
+                <td>
+                    <button type="button" class="btn btn-primary btn-sm" onclick="check('c')">C</button>
+                </td>
+                <td>
+                    <button type="button" class="btn btn-primary btn-sm" onclick="check('d')">D</button>
+                </td>
+                <td>
+                    <button type="button" class="btn btn-primary btn-sm" onclick="check('e')">E</button>
+                </td>
+                <td>
+                    <button type="button" class="btn btn-primary btn-sm" onclick="check('f')">F</button>
+                </td>
+                <td>
+                    <button type="button" class="btn btn-primary btn-sm" onclick="check('g')">G</button>
+                </td>
+                <td>
+                    <button type="button" class="btn btn-primary btn-sm" onclick="check('h')">H</button>
+                </td>
+                <td>
+                    <button type="button" class="btn btn-primary btn-sm" onclick="check('i')">I</button>
+                </td>
+                <td>
+                    <button type="button" class="btn btn-primary btn-sm" onclick="check('j')">J</button>
+                </td>
+                <td>
+                    <button type="button" class="btn btn-primary btn-sm" onclick="check('k')">K</button>
+                </td>
+                <td>
+                    <button type="button" class="btn btn-primary btn-sm" onclick="check('l')">L</button>
+                </td>
+                <td>
+                    <button type="button" class="btn btn-primary btn-sm" onclick="check('m')">M</button>
+                </td>
+              
+              
+              
+              
+            </tr>
+    
+            <tr>
+                <td>
+                    <button type="button" class="btn btn-primary btn-sm" onclick="check('n')">N</button>
+                </td>
+                <td>
+                    <button type="button" class="btn btn-primary btn-sm" onclick="check('o')">O</button>
+                </td>
+                <td>
+                    <button type="button" class="btn btn-primary btn-sm" onclick="check('p')">P</button>
+                </td>
+                <td>
+                    <button type="button" class="btn btn-primary btn-sm" onclick="check('q')">Q</button>
+                </td>
+                <td>
+                    <button type="button" class="btn btn-primary btn-sm" onclick="check('r')">R</button>
+                </td>
+                <td>
+                    <button type="button" class="btn btn-primary btn-sm" onclick="check('s')">S</button>
+                </td>
+                <td>
+                    <button type="button" class="btn btn-primary btn-sm" onclick="check('t')">T</button>
+                </td>
+                <td>
+                    <button type="button" class="btn btn-primary btn-sm" onclick="check('u')">U</button>
+                </td>
+                <td>
+                    <button type="button" class="btn btn-primary btn-sm" onclick="check('v')">V</button>
+                </td>
+                <td>
+                    <button type="button" class="btn btn-primary btn-sm" onclick="check('w')">W</button>
+                </td>
+                <td>
+                    <button type="button" class="btn btn-primary btn-sm" onclick="check('x')">X</button>
+                </td>
+                <td>
+                    <button type="button" class="btn btn-primary btn-sm" onclick="check('y')">Y</button>
+                </td>
+                <td>
+                    <button type="button" class="btn btn-primary btn-sm" onclick="check('z')">Z</button>
+                </td>
+              
+              
+              
+              
+            </tr>
+            
+        </table>
+    </div>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</body>
+</html>

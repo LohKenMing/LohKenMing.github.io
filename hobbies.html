@@ -8,7 +8,7 @@
     <title>Document</title>
     <script src="clarinet_game.js"></script>
 </head>
-<body style="background-color: rgb(230, 252, 252);" onload="test()">
+<body style="background-color: rgb(230, 252, 252);" onload="generate_images()">
     <div class="container-fluid text-white text-center bg-secondary p-4">
       <h1>Hobbies</h1>
     </div>
@@ -342,11 +342,12 @@
 
         <div class="row">
           <h4>Wait....what's a clarinet?</h4>
-          <p>Lets play a game! Guess where the clarinet is!</p>
+          <p>Lets play a game! Guess where the clarinet is! Click on the clarinet</p>
         </div>
+        <button id = 'reset' onclick="reset()" class="btn btn-dark mb-3">Reset Colour</button>
 
         <div class="row" id = "clarinet_game">
-         
+         <p id = "result"></p>
         </div>
         
     </div>

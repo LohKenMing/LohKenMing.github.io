@@ -16,25 +16,55 @@ function generate_images(){
             }
         }
         else{
-            selected.push(instrument)
-            if(instrument == "clarinet"){
-                is_clarinet = true
+            if(!selected.includes(instrument)){
+                selected.push(instrument)
+                if(instrument == "clarinet"){
+                    is_clarinet = true
+                    
+                }
+                count += 1
             }
-            count += 1
+           
         }
     }
 
+
     for(thing of selected){
-        string += ` <div class="col-3">
-        <img src="${thing}.jpeg" alt="">
+        string += ` <div class="col-md-3 mb-3">
+        <img src="game_images/${thing}.jpeg" style = 'height:200px;width:200px' alt="" id = '${thing}' class = 'instrument'>
       </div>`
     }
 
     document.getElementById("clarinet_game").innerHTML = string
 
-}
+    const images = document.getElementsByClassName("instrument");
+
+    const result = document.getElementById("result");
+
+    const buttonPressed = e => { 
+        if(e.target.id == "clarinet"){
+            alert("Correct!")
+            document.getElementsByTagName("body")[0].style.backgroundColor = "green"
+            
+        }
+        else{
+            alert("Wrong! Try Again")
+            document.getElementsByTagName("body")[0].style.backgroundColor = "red"
+        }
+   
+    }
 
 
-function test(){
-    console.log("slay")
+
+    for (let button of images) {
+        button.addEventListener("click", buttonPressed);
+
+    }
+   
+
 }
+
+function reset(){
+    document.getElementsByTagName("body")[0].style.backgroundColor = "rgb(230, 252, 252)"
+}
+
