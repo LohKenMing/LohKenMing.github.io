@@ -21,7 +21,11 @@ function generate(){
 function check(letter){
     let word = document.getElementById("thing").getAttribute("name")
     let placeholder = document.getElementById("thing").getAttribute("placeholder")
-    let correct = false
+    if(word == ""){
+        alert("Please click the buttton 'choose a word' to start")
+    }
+    else{
+        let correct = false
     let new_word = ""
     let counter = 0
     for(char of placeholder){
@@ -60,6 +64,8 @@ function check(letter){
     else{
         live_minus()
     }
+    }
+    
 
     
 }

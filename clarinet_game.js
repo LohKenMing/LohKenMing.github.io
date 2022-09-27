@@ -30,7 +30,7 @@ function generate_images(){
 
 
     for(thing of selected){
-        string += ` <div class="col-md-3 mb-3">
+        string += ` <div class="col-md-4 mb-3">
         <img src="game_images/${thing}.jpeg" style = 'height:200px;width:200px' alt="" id = '${thing}' class = 'instrument'>
       </div>`
     }
