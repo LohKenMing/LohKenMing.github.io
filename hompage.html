@@ -23,6 +23,20 @@
           background-position: 0 0;
         }
       }
+
+    li {
+    display: inline-block;
+    margin-left: 10px;
+    }
+    body {
+      background-image:url('sunset.gif');
+      background-size:100%;
+      /* background-repeat: repeat-y; */
+
+      background-attachment: fixed;
+      height:100%;
+      width:100%;
+}
     </style>
     
   </head>
@@ -50,7 +64,7 @@
               <a class="nav-link" href="projects.html">Blog</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
+              <a class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
         </div>
@@ -60,7 +74,7 @@
     
     <div class="container">
       <div class="row w-50 position-relative top-50 start-50 translate-middle-x mt-5">
-        <h3 class="text-center">To properly welcome you, here are some cute dogs</h3>
+        <h3 class="text-center text-white">To properly welcome you, here are some cute dogs</h3>
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
           <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -90,7 +104,7 @@
       </div>
 
       <!-- About -->
-      <div class="row mt-5">
+      <div class="row mt-5 text-white">
         <h2>About me</h2>
       </div>
       <div class="row d-inline-flex p-2">
@@ -104,7 +118,7 @@
       </div>
 
     
-      <div class="row mt-3">
+      <div class="row mt-3 text-white">
         <h2>Courses I am taking this semester</h2>
         <div class="accordion accordion-flush" id="accordionFlushExample">
           <div class="accordion-item">
@@ -156,7 +170,7 @@
     </div>
 
     <div class="container">
-      <div class="row mt-3">
+      <div class="row mt-3 text-white">
         <h2>Find my timetable here!</h2>
       </div>
 
@@ -314,7 +328,37 @@
       </div>
     </div>
 
-  
+    <div class="container card bg-light mb-5" id="contact">
+        <div class="row text-center">
+            <h2>Contact Me</h2>
+        </div>
+        <div class="row text-center">
+            <p>Feel free to reach out to me through the links below.</p>
+        </div>
+        <div class="row text-center">
+            <ul class="list-unstyle">
+                <li>
+                    <a href="mailto:kenming.loh.2021@scis.smu.edu.sg">
+                        <img src="email.png" alt="" style="height:30px;width:30px">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/lohkenming/">
+                        <img src="link.png" alt="" style="height:30px;width:30px">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://t.me/kenming">
+                        <img src="tele.png" alt="" style="height:30px;width:30px">
+                    </a>
+                </li>
+                
+            </ul>
+           
+            
+        </div>
+    </div>
+    
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
