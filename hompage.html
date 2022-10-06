@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <!-- <link rel="stylesheet" href="CSS/mainpage.css"> -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
     <style>
       .animate{
@@ -37,6 +39,10 @@
       height:100%;
       width:100%;
 }
+
+    span{
+        color:yellow
+    }
     </style>
     
   </head>
@@ -107,15 +113,24 @@
       <div class="row mt-5 text-white">
         <h2>About me</h2>
       </div>
-      <div class="row d-inline-flex p-2">
+      <div class="row p-2">
         <div class="col-md-4">
           <img src="Untitled.png" alt="" >
         </div>
-        <div class="col-md-8 bg-info mt-3">
-          <p class="p-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat qui, incidunt numquam sunt quidem earum asperiores repellendus repudiandae at dignissimos. Iure, facere labore consequatur eligendi esse dolorum natus asperiores doloribus!Loremlorem Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia voluptatibus molestiae recusandae delectus est totam veniam nesciunt beatae! Odit itaque maiores alias provident fuga eum magnam aspernatur necessitatibus aut totam.</p>
+        <div class="col-md-8 bg-info mt-3 text-center">
+          <h1 id = "text">I love to <span class="type"></span></h1>
         </div>
        
       </div>
+
+      <script>
+          var typed = new Typed(".type",{
+              strings: ["code!", "cook!", "make music!", "watch horror movies!"],
+              typeSpeed :150,
+              backSpeed:150,
+              loop: true
+          })
+      </script>
 
     
       <div class="row mt-3 text-white">
@@ -330,7 +345,7 @@
 
     <div class="container card bg-light mb-5" id="contact">
         <div class="row text-center">
-            <h2>Contact Me</h2>
+            <h2 class="display-6" style="font-weight: bold;">Contact Me</h2>
         </div>
         <div class="row text-center">
             <p>Feel free to reach out to me through the links below.</p>
